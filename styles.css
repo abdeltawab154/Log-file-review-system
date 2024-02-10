@@ -1,0 +1,78 @@
+body {
+    padding: 20px;
+    background-color: #f0f8ff; /* AliceBlue */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    border: 1px solid #add8e6; /* LightBlue */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+.container h1 {
+    background-color: #4682b4; /* SteelBlue */
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+table {
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #add8e6; /* LightBlue */
+    padding: 8px;
+}
+
+th {
+    background-color: #4682b4; /* SteelBlue */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f8ff; /* AliceBlue */
+}
+
+.container-fluid {
+    padding: 0 15px;
+}
+.button-status {
+    /* Style the button */
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+}
+
+.button-status:hover {background-color: #3e8e41}
+
+.button-status:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button-status.selected {
+    /* Change the color when selected */
+    background-color: #008000;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css?v=1.0"> <!-- Add version number or timestamp here -->
+    <title>Item Details</title>
+</head>
+<body>
+
+    <!-- Main header for item details -->
+    <header class="header">
+        <div class="container">
+            <img src="logo.jpg" alt="Your Logo" class="logo">
+            <h1 class="header-title">Item Details</h1>
+        </div>
+    </header>
+
+    <!-- Header for website name -->
+    <header class="website-header">
+        <div class="container">
+            <h2 class="website-name">Your Website Name</h2>
+        </div>
+    </header>
+
+    <!-- Form section -->
+    <div class="container">
+        <form id="itemForm">
+            <div class="form-group">
+                <label for="itemName">Item Name:</label>
+                <input type="text" class="form-control" id="itemName" name="itemName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="codeType">Code Type:</label>
+                <input type="text" class="form-control" id="codeType" name="codeType" required>
+            </div>
+
+            <div class="form-group">
+                <label for="itemCode">Item Code:</label>
+                <input type="text" class="form-control" id="itemCode" name="itemCode" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="qty">Quantity:</label>
+                <input type="number" class="form-control" id="qty" name="qty" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pricePerOne">Price Per One:</label>
+                <input type="number" step="0.01" class="form-control" id="pricePerOne" name="pricePerOne" required>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-block" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <!-- Scripts and Modal -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js?v=1.0"></script> <!-- Add version number or timestamp here -->
+
+    <!-- Modal code -->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resultModalLabel">Item Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Result content will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

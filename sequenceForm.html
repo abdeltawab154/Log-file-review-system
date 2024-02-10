@@ -1,0 +1,23 @@
+<!-- Sequence Section -->
+<section>
+    <h2>Sequence</h2>
+    <form id="sequenceForm" method="post" action="main.php">
+        <div class="input-group">
+            <div class="form-group">
+                <label for="pbaCodeSeq">PBA Code</label>
+                <input type="text" class="form-control" id="pbaCodeSeq" name="pbaCode" required>
+            </div>
+            <div class="form-group">
+                <label for="seq1">Seq1</label>
+                <input type="text" class="form-control" id="seq1" name="seq1" required>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary" id="addEditSeq1">Add/Edit</button>
+            </div>
+        </div>
+        <!-- Repeat for seq2 to seq20 -->
+    </form>
+    <hr>
+    <h3>Data</h3>
+    <div id="sequenceData"></div>
+</section>

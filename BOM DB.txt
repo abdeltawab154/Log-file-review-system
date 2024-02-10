@@ -1,0 +1,15 @@
+CREATE TABLE FixtureBOM (
+    id INT AUTO_INCREMENT,
+    fixtureID VARCHAR(255) UNIQUE,
+    usbGender INT,
+    hdmiGender INT,
+    dpGender INT,
+    lanCable INT,
+    satelliteConnector INT,
+    rfConnector INT,
+    satelliteCable INT,
+    raspberryPi INT,
+    username VARCHAR(255),
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);

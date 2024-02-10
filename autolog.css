@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-left: 0; /* Start from the left */
+}
+
+h1 {
+    margin-top: 1em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #9496a4;
+    padding: 10px 0;
+}
+
+form {
+    margin-bottom: 1em;
+    width: 100%;
+}
+.logResult {
+    border: 1px solid #ced4da; /* Small, fixed border width of 1px */
+    padding: 10px;
+    margin-top: 1em;
+    flex: 1;
+    margin-right: 1em;
+    height: 500px;
+    overflow: auto; /* Content is clipped and scrollbars are added */
+    border-radius: 0.25rem;
+    width: 500px; /* Fixed width */
+}
+
+
+
+.logContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.diffTable, .mmSmSoTable {
+    margin-top: 1em;
+}
+
+.table th, .table td {
+    border-top: none;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 3px solid #dee2e6; /* Increase border width to 3px */
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.form-control {
+    width: auto;
+}
+
+.btn-primary {
+    margin-left: 10px;
+}
+
+.logTitle {
+    background-color: #ced4da;
+    padding: 5px;
+    margin-top: 1em;
+    border-radius: 0.25rem;
+    text-align: center;
+    font-weight: bold;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}

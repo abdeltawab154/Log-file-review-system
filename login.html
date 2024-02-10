@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMD Log File Review System</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-weight: bold;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            padding-top: 5%;
+        }
+        .login-form {
+            padding: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 15px;
+            background-color: #ffffff;
+        }
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .login-form .form-control {
+            height: 45px;
+            padding: .375rem .75rem;
+        }
+        .login-form .btn {
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .logout-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <?php
+    // Start the session
+    session_start();
+
+    // Check if the user is not logged in, if not then redirect him to login page
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        header("location: login.html");
+        exit;
+    }
+    ?>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center header">
+                <h1 class="display-4 my-4">SMD Log File Review System</h1>
+            </div>
+            <div class="col-md-6">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <form action="login.php" method="post">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" id="username" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
